@@ -425,3 +425,8 @@ endfunction
 "   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
 
+" Set highlight color for extra whitespaces
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+" Show trailing whitespace and spaces before a tab:
+:match ExtraWhitespace /\s\+$\| \+\ze\t/
