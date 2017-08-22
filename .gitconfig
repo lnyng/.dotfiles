@@ -1,0 +1,7 @@
+[user]
+	name = Leon Yang
+	email = leon.gh.yang@gmail.com
+[push]
+	default = simple
+[credential]
+	helper = cache
