@@ -208,3 +208,4 @@ fun! <SID>DetectIndent()
 endfun
 
 command! -bar -nargs=0 DetectIndent call <SID>DetectIndent()
+:autocmd BufReadPost * :DetectIndent
