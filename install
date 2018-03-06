@@ -4,4 +4,4 @@ SCRIPT=$(readlink -f "$0")
 cd "$(dirname "$SCRIPT")"
 
 files=".bashrc .vim .vimrc .gitconfig .tmux.conf"
-cp -ar $files ~
+cp -air $files ~
