@@ -429,3 +429,6 @@ endfunction
 :match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 set showcmd
+
+" don't indent return type on its separate line
+set cino+=t0
