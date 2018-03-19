@@ -3,5 +3,12 @@
 SCRIPT=$(readlink -f "$0")
 cd "$(dirname "$SCRIPT")"
 
-files=".bashrc .vim .vimrc .gitconfig .tmux.conf"
+tmux_version=$(tmux -V | cut -d' ' -f2)
+if [ $tmux_version = $(printf "$tmux_version\n2.1" | sort -V | tail -n1) ]; then
+	tmux_conf=.tmux-2_1.conf
+else
+	tmux_conf=.tmux-1_8.conf
+fi
+files=".bashrc .vim .vimrc .gitconfig"
 cp -air $files ~
+cp -air $tmux_conf ~/.tmux.conf
