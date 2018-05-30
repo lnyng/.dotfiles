@@ -432,3 +432,5 @@ set showcmd
 
 " don't indent return type on its separate line
 set cino+=t0
+
+cabbr <expr> %% expand('%:h')
