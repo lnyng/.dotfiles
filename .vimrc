@@ -129,6 +129,7 @@ set showmatch
 set mat=2
 
 " No annoying sound on errors
+set belloff=all
 set noerrorbells
 set novisualbell
 set t_vb=
