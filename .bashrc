@@ -118,3 +118,4 @@ if ! shopt -oq posix; then
 fi
 
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+bind 'set bell-style none'
