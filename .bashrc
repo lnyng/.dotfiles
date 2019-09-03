@@ -118,4 +118,5 @@ if ! shopt -oq posix; then
 fi
 
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+export EDITOR=vim
 bind 'set bell-style none'
